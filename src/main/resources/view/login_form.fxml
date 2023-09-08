@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.d24.hms.controller.LoginFormController">
+   <children>
+      <Label fx:id="lblDate" accessibleRole="HYPERLINK" alignment="CENTER" layoutX="521.0" layoutY="718.0" prefHeight="45.0" prefWidth="258.0" text="2023-March-30" textFill="#a1a1a1">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="405.0" layoutY="148.0" opacity="0.9" prefHeight="552.0" prefWidth="463.0" style="-fx-background-color: E1E2E6; -fx-background-radius: 10px;">
+         <children>
+            <RadioButton fx:id="rbtnShowPassword" cacheShape="false" focusTraversable="false" layoutX="293.0" layoutY="399.0" mnemonicParsing="false" onAction="#rbtnShowPasswordOnAction" text="Show Password " />
+            <Label layoutX="41.0" layoutY="137.0" prefHeight="21.0" prefWidth="79.0" text="Username " textFill="#616161">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUsername" focusColor="#1f0c53" focusTraversable="false" layoutX="41.0" layoutY="172.0" onAction="#txtUsernameOnAction" onMouseClicked="#txtUsernameOnMouseClicked" opacity="0.6" prefHeight="3.0" prefWidth="284.0" promptText="d24hostel@gmail.com" />
+            <Label fx:id="lblInvalidUsername" layoutX="42.0" layoutY="224.0" prefHeight="17.0" prefWidth="96.0" text="Invalid username" textFill="#d0312d" />
+            <Label layoutX="41.0" layoutY="266.0" prefHeight="21.0" prefWidth="79.0" text="Password" textFill="#616161">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#1f0c53" focusTraversable="false" layoutX="41.0" layoutY="296.0" onAction="#txtPasswordOnAction" onKeyTyped="#txtPasswordOnKeyTyped" onMouseClicked="#txtPasswordOnMouseClicked" opacity="0.6" prefHeight="3.0" prefWidth="284.0" promptText="************" />
+            <Label fx:id="lblInvalidPassword" layoutX="42.0" layoutY="344.0" prefHeight="17.0" prefWidth="96.0" text="Invalid password" textFill="#d0312d" />
+            <Label fx:id="lblShowPassword" layoutX="36.0" layoutY="395.0" prefHeight="17.0" prefWidth="207.0" text="admin1234" />
+            <JFXButton fx:id="btnLogin" focusTraversable="false" layoutX="90.0" layoutY="441.0" onAction="#btnLoginOnAction" opacity="0.7" prefHeight="29.0" prefWidth="284.0" style="-fx-background-radius: 10; -fx-background-color: #2160c6;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <Label fx:id="lblPasswordHintLabel" layoutX="45.0" layoutY="501.0" prefHeight="17.0" prefWidth="96.0" text="Password Hint  : " textFill="#d0312d" />
+            <Label fx:id="lblPasswordHint" alignment="CENTER" layoutX="258.0" layoutY="500.0" prefHeight="17.0" prefWidth="128.0" textFill="#d0312d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnForgetPassword" focusTraversable="false" layoutX="167.0" layoutY="478.0" onAction="#btnForgetPasswordOnAction" opacity="0.8" text="Forgot Password" textFill="#827777">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="28.0" prefHeight="53.0" prefWidth="408.0" text="Sign In" wrapText="true">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="433.0" layoutY="37.0" prefHeight="53.0" prefWidth="408.0" text="D24 Hostel " textFill="#2160c6" wrapText="true">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="543.0" prefWidth="559.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.d24.hms.controller.popupWindows.PopupRoomEditFormController">
+   <children>
+      <Label layoutX="64.0" layoutY="256.0" prefHeight="20.0" prefWidth="114.0" text="Room Type       : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRoomType" focusTraversable="false" layoutX="190.0" layoutY="252.0" onAction="#txtRoomTypeOnAction" prefHeight="25.0" prefWidth="312.0" promptText="Non AC / Food">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="64.0" layoutY="301.0" prefHeight="20.0" prefWidth="114.0" text="Key Money        :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtKeyMoney" focusTraversable="false" layoutX="190.0" layoutY="299.0" onAction="#txtKeyMoneyOnAction" prefHeight="25.0" prefWidth="312.0" promptText="6500.00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="64.0" layoutY="346.0" prefHeight="20.0" prefWidth="114.0" text="Quantity            :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" focusTraversable="false" layoutX="190.0" layoutY="345.0" onAction="#txtQtyOnAction" prefHeight="25.0" prefWidth="312.0" promptText="10">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnDelete" layoutX="398.0" layoutY="415.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #444444;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="64.0" layoutY="208.0" prefHeight="20.0" prefWidth="114.0" text="Room Type ID   : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRoomTypeId" focusTraversable="false" layoutX="190.0" layoutY="204.0" onAction="#txtRoomTypeIdOnAction" prefHeight="25.0" prefWidth="312.0" promptText="RM-1324">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnUpdate" layoutX="280.0" layoutY="415.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #19376D;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

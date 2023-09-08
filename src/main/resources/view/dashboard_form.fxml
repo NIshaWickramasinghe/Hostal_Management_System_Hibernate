@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #03045e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.d24.hms.controller.DashboardFormController">
+   <children>
+      <Pane opacity="0.9" prefHeight="800.0" prefWidth="240.0" style="-fx-background-color: #0077b6;">
+         <children>
+            <JFXButton fx:id="btnRoom" focusTraversable="false" layoutY="300.0" onAction="#btnRoomOnAction" prefHeight="44.0" prefWidth="240.0" text="   Rooms">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="68.0" layoutY="66.0" text="D24 Hostel ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnStudent" focusTraversable="false" layoutY="357.0" onAction="#btnStudentOnAction" prefHeight="44.0" prefWidth="240.0" text="   Students">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnReservation" focusTraversable="false" layoutY="414.0" onAction="#btnReservationOnAction" prefHeight="44.0" prefWidth="240.0" text="   Reservations">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSettings" focusTraversable="false" layoutY="471.0" onAction="#btnSettingsOnAction" prefHeight="44.0" prefWidth="240.0" text="   Settings">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnLogOut" focusTraversable="false" layoutY="638.0" onAction="#btnLogOutOnAction" opacity="0.9" prefHeight="44.0" prefWidth="240.0" text="   LogOut">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnDashboard" focusTraversable="false" layoutY="243.0" onAction="#btnDashboardOnAction" opacity="0.9" prefHeight="58.0" prefWidth="240.0" text="Dashboard" textFill="#1f3590">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="pane2" layoutX="240.0" prefHeight="800.0" prefWidth="0.0">
+         <children>
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="664.0" layoutY="86.0" opacity="0.5" prefHeight="30.0" prefWidth="326.0" style="-fx-background-color: #7F7F7F; -fx-background-radius: 10px;" text="2023 - 12-22" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="439.0" layoutY="28.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnKeyMoney" layoutX="159.0" layoutY="143.0" onAction="#btnKeyMoneyOnAction" prefHeight="117.0" prefWidth="739.0" style="-fx-background-color: #57809F; -fx-background-radius: 20px;" text="Key money payments" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="159.0" layoutY="307.0" prefHeight="117.0" prefWidth="739.0" style="-fx-background-color: #00b4d8; -fx-background-radius: 20;" text="                              Rooms" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="159.0" layoutY="470.0" prefHeight="117.0" prefWidth="739.0" style="-fx-background-color: #90e0ef; -fx-background-radius: 20;" text="                                Students" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRoomCount" alignment="CENTER" layoutX="322.0" layoutY="348.0" prefHeight="36.0" prefWidth="81.0" text="25" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStudentCount" alignment="CENTER" layoutX="322.0" layoutY="511.0" prefHeight="36.0" prefWidth="81.0" text="25" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
