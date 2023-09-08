@@ -165,7 +165,6 @@ public class AppInitializer extends Application {
 //            session3.close();
 //        }
 
-
         launch();
     }
 }
